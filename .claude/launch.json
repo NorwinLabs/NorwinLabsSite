@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "norwinlabs-site", "runtimeExecutable": "npx", "runtimeArgs": ["--yes", "serve", "-l", "8125", "."], "port": 8125 }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://norwinlabs.com/sitemap.xml

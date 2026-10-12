@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e1b4b" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' https: data:; connect-src 'self'; worker-src 'self';"
+    />
+    <title>NorwinLabs - Software as a Service</title>
+    <meta
+      name="description"
+      content="NorwinLabs builds focused SaaS for small businesses. Meet NorwinInventory, barcode-ready inventory tracking, plus our open-source tools and the game Windhelm."
+    />
+    <link rel="canonical" href="https://norwinlabs.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://norwinlabs.com/" />
+    <meta property="og:title" content="NorwinLabs - Software as a Service" />
+    <meta property="og:description" content="Focused, reliable SaaS for small businesses, plus open-source tools and games." />
+    <meta property="og:site_name" content="NorwinLabs" />
+    <meta property="og:image" content="https://norwinlabs.com/media/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="NorwinLabs logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://norwinlabs.com/media/og-image.jpg" />
+    <meta name="twitter:title" content="NorwinLabs - Software as a Service" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.min.css?v=65ae75f7" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "NorwinLabs",
+            "url": "https://norwinlabs.com/",
+            "logo": "https://norwinlabs.com/media/logo.png",
+            "email": "norwinlabs@gmail.com",
+            "sameAs": ["https://github.com/NorwinLabs"]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "NorwinInventory",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "75", "priceCurrency": "USD" },
+            "publisher": { "@type": "Organization", "name": "NorwinLabs" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Main">
+        <a class="logo" href="/"><img src="/media/logo-96.webp" alt="" width="34" height="34" />NorwinLabs</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#products">Product</a></li>
+          <li><a class="nav-link" href="#how">How it works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#opensource">Open Source</a></li>
+          <li><a class="nav-link" href="#games">Games</a></li>
+          <li><a class="cta-button small" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Introducing NorwinInventory</span>
+            <h1>Inventory tracking that <span class="gradient-text">keeps up with your scanner.</span></h1>
+            <p class="lead">A barcode-ready web app for businesses. Receive, remove and count stock in seconds, with every change logged, from any USB, Bluetooth or camera scanner.</p>
+            <div class="hero-actions">
+              <a class="cta-button" href="#contact">Get started</a>
+              <a class="cta-button secondary" href="#how">See how it works</a>
+            </div>
+            <ul class="hero-points">
+              <li>$75/month flat</li>
+              <li>Unlimited items</li>
+              <li>Unlimited teammates</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="mock">
+              <div class="mock-bar"><i></i><i></i><i></i><span>NorwinInventory</span></div>
+              <div class="mock-body">
+                <div class="mock-scan">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6v12M8 6v12M12 6v12M16 6v12M20 6v12" /></svg>
+                  <span>Scan or type a barcode</span>
+                  <b>Receive</b>
+                </div>
+                <table class="mock-table">
+                  <thead><tr><th>Item</th><th>Location</th><th class="num">On hand</th></tr></thead>
+                  <tbody>
+                    <tr><td>Widget, Large</td><td>A-12</td><td class="num">248</td></tr>
+                    <tr><td>Cable, USB-C 2m</td><td>B-03</td><td class="num">96</td></tr>
+                    <tr><td>Label Roll 4x6</td><td>C-07</td><td class="num low">8 <em>Low</em></td></tr>
+                    <tr><td>Box, Medium</td><td>D-01</td><td class="num">412</td></tr>
+                  </tbody>
+                </table>
+                <p class="mock-note">Illustrative preview</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product / features -->
+      <section id="products">
+        <div class="container section-animate">
+          <p class="kicker">NorwinInventory</p>
+          <h2 class="section-title">Everything you need to know what you have</h2>
+          <p class="section-subtitle">Built around the scanner you already own, with the safeguards a growing business needs.</p>
+          <div class="grid features">
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v12M8 6v12M12 6v12M16 6v12M20 6v12" /></svg></span>
+              <h3>Scan anything</h3>
+              <p>Any USB or Bluetooth scanner works with no drivers or pairing. Or use your device camera. Receive, remove, cycle count or look up.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9" /></svg></span>
+              <h3>Trustworthy counts</h3>
+              <p>Every change is a logged movement: who, when, how many. Several devices can scan at once and stock never goes negative.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0" /></svg></span>
+              <h3>Low-stock alerts</h3>
+              <p>Set a reorder point per item and see what needs attention right on your overview.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0-12l-4 4m4-4l4 4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg></span>
+              <h3>Import and export</h3>
+              <p>Bring your catalog in with CSV, and take your data out whenever you like. Search and filter by SKU, category or location.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" /></svg></span>
+              <h3>Built for teams</h3>
+              <p>Invite teammates by email. Admins manage billing and team; members scan and edit stock. One shared inventory.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /></svg></span>
+              <h3>Simple billing</h3>
+              <p>One flat subscription handled through Stripe, with a customer portal to update or cancel anytime.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how" class="alt">
+        <div class="container section-animate">
+          <p class="kicker">How it works</p>
+          <h2 class="section-title">Up and scanning in three steps</h2>
+          <ol class="steps">
+            <li><span class="step-num">1</span><h3>Add your items</h3><p>Import a CSV or create items one by one, with SKU, barcode, location and reorder point.</p></li>
+            <li><span class="step-num">2</span><h3>Invite your team</h3><p>Send email invites and assign admin or member roles.</p></li>
+            <li><span class="step-num">3</span><h3>Start scanning</h3><p>Plug in a scanner or open the camera, and stock updates as you go.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing">
+        <div class="container section-animate">
+          <p class="kicker">Pricing</p>
+          <h2 class="section-title">One plan. No surprises.</h2>
+          <p class="section-subtitle">No per-item, per-seat or per-scanner fees.</p>
+          <div class="card pricing-card">
+            <h3>NorwinInventory</h3>
+            <div class="price">$75<small> / month</small></div>
+            <ul class="checklist">
+              <li>Unlimited items</li>
+              <li>Unlimited teammates</li>
+              <li>Unlimited scanners</li>
+              <li>Full audit log and CSV export</li>
+              <li>Manage or cancel anytime in the billing portal</li>
+            </ul>
+            <a class="cta-button block" href="#contact">Get started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open source -->
+      <section id="opensource" class="alt">
+        <div class="container section-animate">
+          <p class="kicker">Open source</p>
+          <h2 class="section-title">Tools we build in the open</h2>
+          <p class="section-subtitle">Free to use, inspect and improve, on <a href="https://github.com/NorwinLabs" rel="noopener">GitHub</a>.</p>
+          <div class="grid repos">
+            <a class="card repo" href="https://github.com/NorwinLabs/NorwinMouseAssist" rel="noopener">
+              <span class="lang"><i class="py"></i>Python</span>
+              <h3>NorwinMouseAssist</h3>
+              <p>Helps people with non-steady hands, such as Parkinson's or tremors, use a computer more easily, with jitter filtering and tremor calibration.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/NorwinVibe" rel="noopener">
+              <span class="lang"><i class="js"></i>JavaScript</span>
+              <h3>NorwinVibe</h3>
+              <p>A floating media player for Windows and Android.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/NorwinLabsTools" rel="noopener">
+              <span class="lang"><i class="kt"></i>Kotlin</span>
+              <h3>NorwinLabsTools</h3>
+              <p>An Android app with the useful everyday tools we need.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/NorwinPortfolio" rel="noopener">
+              <span class="lang"><i class="js"></i>JavaScript</span>
+              <h3>NorwinPortfolio</h3>
+              <p>A free, open-source portfolio site you can use to host your own portfolio.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/WorldGuardBatch" rel="noopener">
+              <span class="lang"><i class="java"></i>Java</span>
+              <h3>WorldGuardBatch</h3>
+              <p>A Minecraft plugin that runs batch commands across WorldGuard regions.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/UnrealFastNoise2" rel="noopener">
+              <span class="lang"><i class="cpp"></i>C++</span>
+              <h3>UnrealFastNoise2</h3>
+              <p>An Unreal Engine plugin that wraps the FastNoise2 library.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+            <a class="card repo" href="https://github.com/NorwinLabs/mechvibes-2.0" rel="noopener">
+              <span class="lang"><i class="js"></i>JavaScript</span>
+              <h3>mechvibes-2.0</h3>
+              <p>A Mechvibes clone with a few favorite features added.</p>
+              <span class="repo-link">View on GitHub &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Games -->
+      <section id="games">
+        <div class="container section-animate">
+          <div class="game-banner">
+            <div>
+              <p class="kicker left">From the studio</p>
+              <h2>Windhelm</h2>
+              <p>A procedurally generated, story-driven fantasy RPG with dynamic quests and free lifetime updates.</p>
+              <a class="cta-button" href="https://windhelm.dev" rel="noopener">Visit windhelm.dev</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="alt contact">
+        <div class="container section-animate">
+          <p class="kicker">Contact</p>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-subtitle">Questions, demos or partnership ideas? We would love to hear from you.</p>
+          <div class="hero-actions center"><a class="cta-button" href="mailto:norwinlabs@gmail.com">norwinlabs@gmail.com</a><a class="cta-button secondary" href="https://github.com/NorwinLabs" rel="noopener">Find us on GitHub</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="/"><img src="/media/logo-96.webp" alt="" width="30" height="30" />NorwinLabs</a>
+          <p class="footer-blurb">Focused software for small businesses, and free tools for everyone.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#products">NorwinInventory</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#opensource">Open Source</a></li>
+            <li><a href="https://windhelm.dev" rel="noopener">Windhelm</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="mailto:norwinlabs@gmail.com">Email</a></li>
+            <li><a href="https://github.com/NorwinLabs" rel="noopener">GitHub</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">&copy; <span id="year">2026</span> NorwinLabs. All rights reserved.</div>
+    </footer>
+
+    <script src="script.min.js?v=f0e3940a" defer></script>
+  </body>
+</html>
