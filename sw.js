@@ -6,7 +6,7 @@ const CACHE_NAME = "norwinlabs-v2";
 
 const PRECACHE_ASSETS = [
   "/",
-  "/styles.min.css?v=7f8e0f3e",
+  "/styles.min.css?v=c7f31635",
   "/script.min.js?v=f01f84af",
   "/media/logo-96.webp",
   "/media/fonts/inter-latin-400-normal.woff2",
