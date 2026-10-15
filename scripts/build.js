@@ -22,6 +22,7 @@ const esbuild = require("esbuild");
 const ROOT = path.join(__dirname, "..");
 const ASSETS = [
   { src: "src/script.js", out: "script.min.js", loader: "js" },
+  { src: "src/chat.js", out: "chat.min.js", loader: "js" },
   { src: "src/styles.css", out: "styles.min.css", loader: "css" },
 ];
 const REFERENCES = [
