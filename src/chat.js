@@ -8,7 +8,7 @@
 
   // Public Web3Forms access key (safe to expose; it only lets people email you).
   // Get a free one at https://web3forms.com by entering norwinlabs@gmail.com.
-  var ACCESS_KEY = "";
+  var ACCESS_KEY = "d75fe6d5-b49a-4d3c-81ac-a21d0eeaddee";
   var TO_EMAIL = "norwinlabs@gmail.com";
   var ENDPOINT = "https://api.web3forms.com/submit";
 
