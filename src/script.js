@@ -81,15 +81,34 @@ if (track) {
   };
   const prev = document.getElementById("car-prev");
   const next = document.getElementById("car-next");
+  const pauseBtn = document.getElementById("car-pause");
   let timer = null;
   const stop = () => {
     clearInterval(timer);
     timer = null;
   };
+  const setPause = (paused) => {
+    if (!pauseBtn) return;
+    pauseBtn.setAttribute("aria-pressed", String(paused));
+    pauseBtn.setAttribute("aria-label", paused ? "Play automatic scrolling" : "Pause automatic scrolling");
+    pauseBtn.textContent = paused ? "\u25B6" : "\u23F8";
+  };
+  let userPaused = false;
+  const calmMotionCar = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const start = () => {
+    if (userPaused) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!reduce && !timer) timer = setInterval(() => go(1), 5000);
   };
+  if (pauseBtn) {
+    pauseBtn.addEventListener("click", () => {
+      userPaused = !userPaused;
+      setPause(userPaused);
+      if (userPaused) stop();
+      else start();
+    });
+    if (calmMotionCar) pauseBtn.hidden = true;
+  }
   if (prev) prev.addEventListener("click", () => { stop(); go(-1); });
   if (next) next.addEventListener("click", () => { stop(); go(1); });
   track.addEventListener("keydown", (e) => {

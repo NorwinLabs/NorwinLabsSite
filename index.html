@@ -8,16 +8,16 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' https: data:; connect-src 'self'; worker-src 'self';"
     />
-    <title>NorwinLabs - Software as a Service</title>
+    <title>NorwinLabs | Software, IT Consulting &amp; Games</title>
     <meta
       name="description"
-      content="NorwinLabs builds focused SaaS for small businesses. Meet NorwinInventory, barcode-ready inventory tracking, plus our open-source tools and the game Windhelm."
+      content="NorwinLabs LLC builds NorwinInventory, a barcode-ready inventory SaaS, publishes open-source tools, offers IT consulting, and makes the game Windhelm."
     />
     <link rel="canonical" href="https://norwinlabs.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://norwinlabs.com/" />
-    <meta property="og:title" content="NorwinLabs - Software as a Service" />
-    <meta property="og:description" content="Focused, reliable SaaS for small businesses, plus open-source tools and games." />
+    <meta property="og:title" content="NorwinLabs | Software, IT Consulting &amp; Games" />
+    <meta property="og:description" content="Software, IT consulting and games from a small team: NorwinInventory, open-source tools and Windhelm." />
     <meta property="og:site_name" content="NorwinLabs" />
     <meta property="og:image" content="https://norwinlabs.com/media/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -25,11 +25,11 @@
     <meta property="og:image:alt" content="NorwinLabs logo" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://norwinlabs.com/media/og-image.jpg" />
-    <meta name="twitter:title" content="NorwinLabs - Software as a Service" />
+    <meta name="twitter:title" content="NorwinLabs | Software, IT Consulting &amp; Games" />
     <link rel="icon" type="image/png" href="/media/favicon.png" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.min.css?v=e5c53102" />
+    <link rel="stylesheet" href="styles.min.css?v=1ded2cdd" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -37,6 +37,7 @@
           {
             "@type": "Organization",
             "name": "NorwinLabs",
+            "legalName": "NorwinLabs LLC",
             "url": "https://norwinlabs.com/",
             "logo": "https://norwinlabs.com/media/logo.png",
             "email": "norwinlabs@gmail.com",
@@ -74,11 +75,21 @@
     </header>
 
     <main id="main">
+      <!-- Company intro -->
+      <section class="intro">
+        <div class="container">
+          <p class="kicker">NorwinLabs LLC</p>
+          <h1>Software, IT consulting and games, built by one small team.</h1>
+          <p>We make NorwinInventory for businesses, share open-source tools, help companies with their technology, and create the fantasy RPG Windhelm.</p>
+        </div>
+      </section>
+
       <!-- Featured carousel -->
       <section class="showcase" aria-roledescription="carousel" aria-label="Software and services">
         <div class="showcase-head container">
           <p class="kicker left">Software &amp; services</p>
           <div class="showcase-controls">
+            <button class="car-btn pause" id="car-pause" type="button" aria-pressed="false" aria-label="Pause automatic scrolling">&#9208;</button>
             <button class="car-btn" id="car-prev" type="button" aria-label="Previous">&larr;</button>
             <button class="car-btn" id="car-next" type="button" aria-label="Next">&rarr;</button>
           </div>
@@ -191,7 +202,7 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Introducing NorwinInventory</span>
-            <h1>Inventory tracking that <span class="gradient-text">keeps up with your scanner.</span></h1>
+            <h2 class="hero-title">Inventory tracking that <span class="gradient-text">keeps up with your scanner.</span></h2>
             <p class="lead">A barcode-ready web app for businesses. Receive, remove and count stock in seconds, with every change logged, from any USB, Bluetooth or camera scanner.</p>
             <div class="hero-actions">
               <a class="cta-button" href="https://inventory.norwinlabs.com/login">Get started</a>
@@ -275,7 +286,7 @@
           <p class="footer-blurb">Focused software for small businesses, and free tools for everyone.</p>
         </div>
         <nav aria-label="Footer">
-          <h4>Explore</h4>
+          <h2 class="foot-title">Explore</h2>
           <ul>
             <li><a href="/software.html#products">NorwinInventory</a></li>
             <li><a href="/consulting.html">Consulting</a></li>
@@ -284,7 +295,7 @@
           </ul>
         </nav>
         <nav aria-label="Legal">
-          <h4>Company</h4>
+          <h2 class="foot-title">Company</h2>
           <ul>
             <li><a href="mailto:norwinlabs@gmail.com">Email</a></li>
             <li><a href="https://github.com/NorwinLabs" rel="noopener">GitHub</a></li>
@@ -292,9 +303,9 @@
           </ul>
         </nav>
       </div>
-      <div class="container footer-bottom">&copy; <span id="year">2026</span> NorwinLabs. All rights reserved.</div>
+      <div class="container footer-bottom">&copy; <span id="year">2026</span> NorwinLabs LLC. All rights reserved.</div>
     </footer>
 
-    <script src="script.min.js?v=6d88948b" defer></script>
+    <script src="script.min.js?v=089f3ab3" defer></script>
   </body>
 </html>
