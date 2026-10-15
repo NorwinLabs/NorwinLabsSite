@@ -3,26 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    <meta name="theme-color" content="#1e1b4b" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self';" />
     <title>Privacy Policy - NorwinLabs</title>
-    <meta name="description" content="How NorwinLabs handles information on norwinlabs.com. This website does not use cookies, analytics or trackers." />
+    <meta name="description" content="How NorwinLabs handles information on norwinlabs.com and in NorwinInventory. This website does not use cookies, analytics or trackers." />
     <link rel="canonical" href="https://norwinlabs.com/privacy.html" />
     <meta property="og:title" content="Privacy Policy - NorwinLabs" />
     <meta property="og:url" content="https://norwinlabs.com/privacy.html" />
     <meta property="og:image" content="https://norwinlabs.com/media/og-image.jpg" />
     <link rel="icon" type="image/png" href="/media/favicon.png" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.min.css?v=1ded2cdd" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.min.css?v=7f8e0f3e" />
   </head>
   <body>
-    <main class="prose">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Main">
+        <a class="logo" href="/"><img src="/media/logo-96.webp" alt="" width="34" height="34" />NorwinLabs</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="/software.html">Software</a></li>
+          <li><a class="nav-link" href="/software.html#opensource">Open Source</a></li>
+          <li><a class="nav-link" href="/consulting.html">Consulting</a></li>
+          <li><a class="nav-link" href="/games.html">Games</a></li>
+          <li><a class="cta-button small" href="/consulting.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="prose">
       <h1>Privacy Policy</h1>
-      <p>This website is a static marketing site. It does not use cookies, analytics or trackers, and it does not collect personal information.</p>
-      <h2>Product data</h2>
-      <p>Information handled inside NorwinLabs products (such as NorwinInventory accounts and inventory data) is covered by the terms and privacy notice presented at sign-up.</p>
+      <p class="meta">Effective October 15, 2026</p>
+      <p>This policy explains how NorwinLabs ("we", "us") handles information on norwinlabs.com and in NorwinInventory.</p>
+
+      <h2>This website</h2>
+      <p>norwinlabs.com is a static website. It does not use cookies, analytics, advertising or tracking, and it does not collect personal information. The site is hosted on GitHub Pages, which may keep standard server logs, such as IP addresses, under its own privacy policy.</p>
+
+      <h2>Contact requests</h2>
+      <p>The consultation form on our Consulting page does not send data to our servers. When you submit it, it opens a message in your own email app addressed to us. We only receive what you choose to send. We use it only to reply to you and do not sell or share it.</p>
+
+      <h2>NorwinInventory</h2>
+      <p>If you use NorwinInventory, we process the account details and inventory data you and your teammates enter in order to provide the service. Payments are handled by Stripe; we do not see or store your full card number. You own your data and can export it at any time. See our <a href="/terms.html">Terms of Service</a> for details.</p>
+
+      <h2>Third-party links</h2>
+      <p>Our pages link to other sites, such as GitHub, Steam and windhelm.dev. Those sites have their own privacy practices.</p>
+
+      <h2>Children</h2>
+      <p>Our services are intended for businesses and are not directed at children under 13.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy and will post changes here with a new effective date.</p>
+
       <h2>Contact</h2>
-      <p>Questions? Email <a href="mailto:norwinlabs@gmail.com">norwinlabs@gmail.com</a> or find us at <a href="https://github.com/NorwinLabs">github.com/NorwinLabs</a>.</p>
-      <p><a href="/">&larr; Back to home</a></p>
+      <p>Questions? Email <a href="mailto:norwinlabs@gmail.com">norwinlabs@gmail.com</a>.</p>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="/"><img src="/media/logo-96.webp" alt="" width="30" height="30" />NorwinLabs</a>
+          <p class="footer-blurb">Focused software for small businesses, and free tools for everyone.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2 class="foot-title">Explore</h2>
+          <ul>
+            <li><a href="/software.html#products">NorwinInventory</a></li>
+            <li><a href="/consulting.html">Consulting</a></li>
+            <li><a href="/software.html#opensource">Open Source</a></li>
+            <li><a href="/games.html">Windhelm</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2 class="foot-title">Company</h2>
+          <ul>
+            <li><a href="mailto:norwinlabs@gmail.com">Email</a></li>
+            <li><a href="https://github.com/NorwinLabs" rel="noopener">GitHub</a></li>
+            <li><a href="/terms.html">Terms</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">&copy; <span id="year">2026</span> NorwinLabs. All rights reserved.</div>
+    </footer>
+
+    <script src="script.min.js?v=f01f84af" defer></script>
   </body>
 </html>

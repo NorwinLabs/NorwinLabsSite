@@ -243,3 +243,57 @@ if (dn && dnRange) {
   render(0);
   if (auto) requestAnimationFrame(tick);
 }
+
+// Consultation form: builds a prefilled email (no server involved)
+const consultForm = document.getElementById("consult-form");
+if (consultForm) {
+  const status = document.getElementById("cf-status");
+  const gmail = document.getElementById("cf-gmail");
+  const TO = "norwinlabs@gmail.com";
+  const field = (id) => document.getElementById(id);
+  const compose = () => {
+    const topic = field("cf-topic").value || "General";
+    const subject = "Consulting inquiry: " + topic;
+    const body = [
+      "Name: " + field("cf-name").value.trim(),
+      "Email: " + field("cf-email").value.trim(),
+      "Phone: " + (field("cf-phone").value.trim() || "n/a"),
+      "Service: " + topic,
+      "",
+      field("cf-message").value.trim(),
+    ].join("\n");
+    return { subject, body };
+  };
+  const validate = () => {
+    let first = null;
+    ["cf-name", "cf-email", "cf-topic", "cf-message"].forEach((id) => {
+      const el = field(id);
+      const ok = el.value.trim() !== "" && (id !== "cf-email" || /^\S+@\S+\.\S+$/.test(el.value.trim()));
+      el.setAttribute("aria-invalid", ok ? "false" : "true");
+      if (!ok && !first) first = el;
+    });
+    return first;
+  };
+  consultForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const bad = validate();
+    if (bad) {
+      status.className = "form-status error";
+      status.textContent = "Please fill in the highlighted fields.";
+      bad.focus();
+      return;
+    }
+    const { subject, body } = compose();
+    status.className = "form-status";
+    status.textContent = "Opening your email app. If nothing opens, use Compose in Gmail or write to " + TO + ".";
+    window.location.href = "mailto:" + TO + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+  if (gmail) {
+    gmail.addEventListener("click", () => {
+      const { subject, body } = compose();
+      gmail.href =
+        "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(TO) +
+        "&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  }
+}

@@ -29,6 +29,7 @@ const REFERENCES = [
   "software.html",
   "consulting.html",
   "games.html",
+  "terms.html",
   "privacy.html",
   "404.html",
   "sw.js",
