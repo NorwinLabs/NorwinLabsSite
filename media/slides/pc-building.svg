@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#312e81"/><stop offset="1" stop-color="#12102e"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#6366f1" stop-opacity=".55"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="640" height="400" fill="url(#bg)"/>
+<circle cx="320" cy="200" r="190" fill="url(#gl)"/>
+<g stroke="#ffffff" stroke-opacity=".05"><path d="M0 0V400"/><path d="M40 0V400"/><path d="M80 0V400"/><path d="M120 0V400"/><path d="M160 0V400"/><path d="M200 0V400"/><path d="M240 0V400"/><path d="M280 0V400"/><path d="M320 0V400"/><path d="M360 0V400"/><path d="M400 0V400"/><path d="M440 0V400"/><path d="M480 0V400"/><path d="M520 0V400"/><path d="M560 0V400"/><path d="M600 0V400"/><path d="M640 0V400"/><path d="M0 0H640"/><path d="M0 40H640"/><path d="M0 80H640"/><path d="M0 120H640"/><path d="M0 160H640"/><path d="M0 200H640"/><path d="M0 240H640"/><path d="M0 280H640"/><path d="M0 320H640"/><path d="M0 360H640"/><path d="M0 400H640"/></g>
+
+<rect x="215" y="50" width="210" height="300" rx="20" fill="#1b1942" stroke="url(#ac)" stroke-width="4"/>
+<rect x="235" y="72" width="170" height="256" rx="12" stroke="#ffffff" stroke-opacity=".15" stroke-width="2"/>
+<circle cx="320" cy="130" r="38" stroke="url(#ac)" stroke-width="4"/><circle cx="320" cy="130" r="7" fill="#22d3ee" stroke="none"/>
+<path d="M320 92v24M320 144v24M282 130h24M334 130h24M293 103l17 17M330 140l17 17M347 103l-17 17M310 140l-17 17" stroke="#818cf8" stroke-width="3"/>
+<rect x="250" y="195" width="140" height="26" rx="8" fill="url(#ac)" stroke="none"/>
+<circle cx="268" cy="208" r="6" fill="#12102e" stroke="none"/><circle cx="372" cy="208" r="6" fill="#12102e" stroke="none"/>
+<rect x="250" y="240" width="60" height="50" rx="8" stroke="#22d3ee" stroke-width="3"/>
+<rect x="326" y="240" width="64" height="12" rx="4" fill="#ffffff" fill-opacity=".25" stroke="none"/>
+<rect x="326" y="262" width="64" height="12" rx="4" fill="#ffffff" fill-opacity=".25" stroke="none"/>
+<rect x="326" y="284" width="64" height="12" rx="4" fill="#ffffff" fill-opacity=".25" stroke="none"/>
+<path d="M120 300h60l20-40 20 70 20-50h50M440 120h80M440 150h60M440 180h80" stroke="url(#ac)" stroke-width="3" stroke-opacity=".6"/>
+
+</svg>

@@ -29,7 +29,7 @@
     <link rel="icon" type="image/png" href="/media/favicon.png" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.min.css?v=32e7831d" />
+    <link rel="stylesheet" href="styles.min.css?v=e5c53102" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -64,17 +64,128 @@
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
         </button>
         <ul class="nav-menu" id="nav-menu">
-          <li><a class="nav-link" href="#products">Product</a></li>
-          <li><a class="nav-link" href="#how">How it works</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link" href="#opensource">Open Source</a></li>
-          <li><a class="nav-link" href="#games">Games</a></li>
+          <li><a class="nav-link" href="/software.html">Software</a></li>
+          <li><a class="nav-link" href="/software.html#opensource">Open Source</a></li>
+          <li><a class="nav-link" href="/consulting.html">Consulting</a></li>
+          <li><a class="nav-link" href="/games.html">Games</a></li>
           <li><a class="cta-button small" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main">
+      <!-- Featured carousel -->
+      <section class="showcase" aria-roledescription="carousel" aria-label="Software and services">
+        <div class="showcase-head container">
+          <p class="kicker left">Software &amp; services</p>
+          <div class="showcase-controls">
+            <button class="car-btn" id="car-prev" type="button" aria-label="Previous">&larr;</button>
+            <button class="car-btn" id="car-next" type="button" aria-label="Next">&rarr;</button>
+          </div>
+        </div>
+        <ul class="track" id="track" tabindex="0" aria-label="Scrollable list of software and services">
+          <li class="slide" id="slide-0">
+            <a class="slide-card" href="/software.html#products">
+              <span class="slide-media shot"><img src="/media/app-inventory.webp" alt="Screenshot of the NorwinInventory Inventory page" width="1280" height="820" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Software</span>
+                <span class="slide-title">Inventory tracking, powered by your scanner</span>
+                <span class="slide-desc">Search, scan and monitor every item with low-stock badges.</span>
+                <span class="slide-link">NorwinInventory &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-1">
+            <a class="slide-card" href="/software.html#tour">
+              <span class="slide-media shot"><img src="/media/app-reports.webp" alt="Screenshot of the NorwinInventory Reports page" width="1280" height="820" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Software</span>
+                <span class="slide-title">See how your stock is moving</span>
+                <span class="slide-desc">Inventory value, reorder lists and stock in and out over time.</span>
+                <span class="slide-link">Reports &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-2">
+            <a class="slide-card" href="/software.html#opensource">
+              <span class="slide-media"><img src="/media/slides/opensource.svg" alt="Illustration of code brackets and a git branch graph" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Open source</span>
+                <span class="slide-title">Free tools, built in the open</span>
+                <span class="slide-desc">Accessibility, media, Android and game-dev projects on GitHub.</span>
+                <span class="slide-link">Open source &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-3">
+            <a class="slide-card" href="/consulting.html#networking">
+              <span class="slide-media"><img src="/media/slides/networking.svg" alt="Illustration of a router connected to four devices" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Consulting</span>
+                <span class="slide-title">Networks that stay up and stay secure</span>
+                <span class="slide-desc">Design, Wi-Fi, firewalls, VPN and remote access.</span>
+                <span class="slide-link">Computer networking &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-4">
+            <a class="slide-card" href="/consulting.html#websites">
+              <span class="slide-media"><img src="/media/slides/websites.svg" alt="Illustration of a website in a browser window" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Consulting</span>
+                <span class="slide-title">Fast, modern, professional websites</span>
+                <span class="slide-desc">Responsive, accessible sites with domain and hosting set up.</span>
+                <span class="slide-link">Website building &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-5">
+            <a class="slide-card" href="/consulting.html#pc-building">
+              <span class="slide-media"><img src="/media/slides/pc-building.svg" alt="Illustration of a custom PC tower" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Consulting</span>
+                <span class="slide-title">A PC built around how you work</span>
+                <span class="slide-desc">Parts, assembly, setup and testing for gaming, creative or office use.</span>
+                <span class="slide-link">Custom PC building &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-6">
+            <a class="slide-card" href="/consulting.html#troubleshooting">
+              <span class="slide-media"><img src="/media/slides/troubleshooting.svg" alt="Illustration of a monitor with a wrench" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Consulting</span>
+                <span class="slide-title">Find the root cause, fix it for good</span>
+                <span class="slide-desc">Slowdowns, crashes, boot failures, hardware and malware.</span>
+                <span class="slide-link">PC troubleshooting &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-7">
+            <a class="slide-card" href="/consulting.html#acquisition">
+              <span class="slide-media"><img src="/media/slides/acquisition.svg" alt="Illustration of a building with a magnifying glass" width="640" height="400" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Consulting</span>
+                <span class="slide-title">Know the tech before you buy</span>
+                <span class="slide-desc">IT reviews, risks and upgrade costs for acquisitions.</span>
+                <span class="slide-link">Business acquisition tech &rarr;</span>
+              </span>
+            </a>
+          </li>
+          <li class="slide" id="slide-8">
+            <a class="slide-card" href="/games.html">
+              <span class="slide-media shot"><img src="/media/windhelm/sunset.webp" alt="Windhelm screenshot: sunset over mountains with floating islands" width="800" height="450" loading="lazy" /></span>
+              <span class="slide-body">
+                <span class="slide-tag">Game</span>
+                <span class="slide-title">Windhelm</span>
+                <span class="slide-desc">A story-driven fantasy RPG with procedural worlds and free lifetime updates.</span>
+                <span class="slide-link">Explore the game &rarr;</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-grid">
@@ -84,12 +195,13 @@
             <p class="lead">A barcode-ready web app for businesses. Receive, remove and count stock in seconds, with every change logged, from any USB, Bluetooth or camera scanner.</p>
             <div class="hero-actions">
               <a class="cta-button" href="https://inventory.norwinlabs.com/login">Get started</a>
-              <a class="cta-button secondary" href="#how">See how it works</a>
+              <a class="cta-button secondary" href="/software.html#how">See how it works</a>
             </div>
             <ul class="hero-points">
               <li>$75/month flat</li>
               <li>Unlimited items</li>
               <li>Unlimited teammates</li>
+              <li>24/7 support</li>
             </ul>
           </div>
 
@@ -102,153 +214,30 @@
         </div>
       </section>
 
-      <!-- Product / features -->
+      <!-- What we do -->
       <section id="products">
         <div class="container section-animate">
-          <p class="kicker">NorwinInventory</p>
-          <h2 class="section-title">Everything you need to know what you have</h2>
-          <p class="section-subtitle">Built around the scanner you already own, with the safeguards a growing business needs.</p>
+          <p class="kicker">What we do</p>
+          <h2 class="section-title">Software, open source and consulting</h2>
+          <p class="section-subtitle">One small team, building products and helping businesses with technology.</p>
           <div class="grid features">
-            <article class="card feature">
+            <a class="card feature linkcard" href="/software.html#products">
               <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v12M8 6v12M12 6v12M16 6v12M20 6v12" /></svg></span>
-              <h3>Scan anything</h3>
-              <p>Any USB or Bluetooth scanner works with no drivers or pairing. Or use your device camera. Receive, remove, cycle count or look up.</p>
-            </article>
-            <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9" /></svg></span>
-              <h3>Trustworthy counts</h3>
-              <p>Every change is a logged movement: who, when, how many. Several devices can scan at once and stock never goes negative.</p>
-            </article>
-            <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0" /></svg></span>
-              <h3>Low-stock alerts</h3>
-              <p>Set a reorder point per item and see what needs attention right on your overview.</p>
-            </article>
-            <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0-12l-4 4m4-4l4 4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg></span>
-              <h3>Import and export</h3>
-              <p>Bring your catalog in with CSV, and take your data out whenever you like. Search and filter by SKU, category or location.</p>
-            </article>
-            <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" /></svg></span>
-              <h3>Built for teams</h3>
-              <p>Invite teammates by email. Admins manage billing and team; members scan and edit stock. One shared inventory.</p>
-            </article>
-            <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /></svg></span>
-              <h3>Simple billing</h3>
-              <p>One flat subscription handled through Stripe, with a customer portal to update or cancel anytime.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- App screenshots -->
-      <section id="tour">
-        <div class="container section-animate">
-          <p class="kicker">Inside the app</p>
-          <h2 class="section-title">See it before you sign up</h2>
-          <p class="section-subtitle">Real screens from NorwinInventory, shown with a sample business. Want to click around? Open the login page and use the shared demo account.</p>
-          <div class="shots">
-            <figure class="shot">
-              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Inventory</span></div><img class="mock-shot" src="/media/app-inventory.webp" alt="The Inventory page listing items with category, location, on-hand quantity, stock status badges and value" width="1280" height="820" loading="lazy" /></div>
-              <figcaption><h3>Every item at a glance</h3><p>Search or scan to find anything. Low-stock and out-of-stock badges show what needs reordering, with import, export and filters built in.</p></figcaption>
-            </figure>
-            <figure class="shot">
-              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Reports</span></div><img class="mock-shot" src="/media/app-reports.webp" alt="The Reports page showing inventory value, units on hand, a stock in and out chart and best sellers" width="1280" height="820" loading="lazy" /></div>
-              <figcaption><h3>Know how stock is moving</h3><p>Inventory value, what to reorder, stock received and shipped over time, plus best sellers and most-received items.</p></figcaption>
-            </figure>
-            <figure class="shot">
-              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Log in</span></div><img class="mock-shot" src="/media/app-login.webp" alt="The Norwin Inventory login page with a Try the demo option" width="1280" height="780" loading="lazy" /></div>
-              <figcaption><h3>Try the demo</h3><p>No account needed. The login page includes a shared sample business with real-looking stock, batches, contracts and history.</p></figcaption>
-            </figure>
-          </div>
-          <p class="shots-cta"><a class="cta-button" href="https://inventory.norwinlabs.com/login">Try the demo</a></p>
-        </div>
-      </section>
-
-      <!-- How it works -->
-      <section id="how" class="alt">
-        <div class="container section-animate">
-          <p class="kicker">How it works</p>
-          <h2 class="section-title">Up and scanning in three steps</h2>
-          <ol class="steps">
-            <li><span class="step-num">1</span><h3>Add your items</h3><p>Import a CSV or create items one by one, with SKU, barcode, location and reorder point.</p></li>
-            <li><span class="step-num">2</span><h3>Invite your team</h3><p>Send email invites and assign admin or member roles.</p></li>
-            <li><span class="step-num">3</span><h3>Start scanning</h3><p>Plug in a scanner or open the camera, and stock updates as you go.</p></li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- Pricing -->
-      <section id="pricing">
-        <div class="container section-animate">
-          <p class="kicker">Pricing</p>
-          <h2 class="section-title">One plan. No surprises.</h2>
-          <p class="section-subtitle">No per-item, per-seat or per-scanner fees.</p>
-          <div class="card pricing-card">
-            <h3>NorwinInventory</h3>
-            <div class="price">$75<small> / month</small></div>
-            <ul class="checklist">
-              <li>Unlimited items</li>
-              <li>Unlimited teammates</li>
-              <li>Unlimited scanners</li>
-              <li>Full audit log and CSV export</li>
-              <li>Manage or cancel anytime in the billing portal</li>
-            </ul>
-            <a class="cta-button block" href="https://inventory.norwinlabs.com/login">Get started</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Open source -->
-      <section id="opensource" class="alt">
-        <div class="container section-animate">
-          <p class="kicker">Open source</p>
-          <h2 class="section-title">Tools we build in the open</h2>
-          <p class="section-subtitle">Free to use, inspect and improve, on <a href="https://github.com/NorwinLabs" rel="noopener">GitHub</a>.</p>
-          <div class="grid repos">
-            <a class="card repo" href="https://github.com/NorwinLabs/NorwinMouseAssist" rel="noopener">
-              <span class="lang"><i class="py"></i>Python</span>
-              <h3>NorwinMouseAssist</h3>
-              <p>Helps people with non-steady hands, such as Parkinson's or tremors, use a computer more easily, with jitter filtering and tremor calibration.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
+              <h3>NorwinInventory</h3>
+              <p>Barcode-ready inventory tracking with an audit log, low-stock alerts, team roles and 24/7 customer support. $75/month, unlimited everything.</p>
+              <span class="repo-link">Explore the software &rarr;</span>
             </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/NorwinVibe" rel="noopener">
-              <span class="lang"><i class="js"></i>JavaScript</span>
-              <h3>NorwinVibe</h3>
-              <p>A floating media player for Windows and Android.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
+            <a class="card feature linkcard" href="/software.html#opensource">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12" /></svg></span>
+              <h3>Open source</h3>
+              <p>Free tools on GitHub: an accessibility mouse filter, a floating media player, an Android toolkit and more.</p>
+              <span class="repo-link">Browse the projects &rarr;</span>
             </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/NorwinLabsTools" rel="noopener">
-              <span class="lang"><i class="kt"></i>Kotlin</span>
-              <h3>NorwinLabsTools</h3>
-              <p>An Android app with the useful everyday tools we need.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
-            </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/NorwinPortfolio" rel="noopener">
-              <span class="lang"><i class="js"></i>JavaScript</span>
-              <h3>NorwinPortfolio</h3>
-              <p>A free, open-source portfolio site you can use to host your own portfolio.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
-            </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/WorldGuardBatch" rel="noopener">
-              <span class="lang"><i class="java"></i>Java</span>
-              <h3>WorldGuardBatch</h3>
-              <p>A Minecraft plugin that runs batch commands across WorldGuard regions.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
-            </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/UnrealFastNoise2" rel="noopener">
-              <span class="lang"><i class="cpp"></i>C++</span>
-              <h3>UnrealFastNoise2</h3>
-              <p>An Unreal Engine plugin that wraps the FastNoise2 library.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
-            </a>
-            <a class="card repo" href="https://github.com/NorwinLabs/mechvibes-2.0" rel="noopener">
-              <span class="lang"><i class="js"></i>JavaScript</span>
-              <h3>mechvibes-2.0</h3>
-              <p>A Mechvibes clone with a few favorite features added.</p>
-              <span class="repo-link">View on GitHub &rarr;</span>
+            <a class="card feature linkcard" href="/consulting.html">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z" /></svg></span>
+              <h3>IT consulting</h3>
+              <p>Networking, websites, custom PC builds, troubleshooting and tech advice for business acquisitions.</p>
+              <span class="repo-link">See consulting services &rarr;</span>
             </a>
           </div>
         </div>
@@ -262,7 +251,7 @@
               <p class="kicker left">From the studio</p>
               <h2>Windhelm</h2>
               <p>A procedurally generated, story-driven fantasy RPG with dynamic quests and free lifetime updates.</p>
-              <a class="cta-button" href="https://windhelm.dev" rel="noopener">Visit windhelm.dev</a>
+              <div class="hero-actions"><a class="cta-button" href="/games.html">Explore Windhelm</a><a class="cta-button secondary" href="https://windhelm.dev" rel="noopener">Visit windhelm.dev</a></div>
             </div>
           </div>
         </div>
@@ -288,10 +277,10 @@
         <nav aria-label="Footer">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#products">NorwinInventory</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#opensource">Open Source</a></li>
-            <li><a href="https://windhelm.dev" rel="noopener">Windhelm</a></li>
+            <li><a href="/software.html#products">NorwinInventory</a></li>
+            <li><a href="/consulting.html">Consulting</a></li>
+            <li><a href="/software.html#opensource">Open Source</a></li>
+            <li><a href="/games.html">Windhelm</a></li>
           </ul>
         </nav>
         <nav aria-label="Legal">
@@ -306,6 +295,6 @@
       <div class="container footer-bottom">&copy; <span id="year">2026</span> NorwinLabs. All rights reserved.</div>
     </footer>
 
-    <script src="script.min.js?v=f0e3940a" defer></script>
+    <script src="script.min.js?v=6d88948b" defer></script>
   </body>
 </html>

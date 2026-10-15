@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#312e81"/><stop offset="1" stop-color="#12102e"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#6366f1" stop-opacity=".55"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="640" height="400" fill="url(#bg)"/>
+<circle cx="320" cy="200" r="190" fill="url(#gl)"/>
+<g stroke="#ffffff" stroke-opacity=".05"><path d="M0 0V400"/><path d="M40 0V400"/><path d="M80 0V400"/><path d="M120 0V400"/><path d="M160 0V400"/><path d="M200 0V400"/><path d="M240 0V400"/><path d="M280 0V400"/><path d="M320 0V400"/><path d="M360 0V400"/><path d="M400 0V400"/><path d="M440 0V400"/><path d="M480 0V400"/><path d="M520 0V400"/><path d="M560 0V400"/><path d="M600 0V400"/><path d="M640 0V400"/><path d="M0 0H640"/><path d="M0 40H640"/><path d="M0 80H640"/><path d="M0 120H640"/><path d="M0 160H640"/><path d="M0 200H640"/><path d="M0 240H640"/><path d="M0 280H640"/><path d="M0 320H640"/><path d="M0 360H640"/><path d="M0 400H640"/></g>
+
+<rect x="150" y="90" width="340" height="220" rx="18" fill="#1b1942" stroke="url(#ac)" stroke-width="4"/>
+<path d="M150 130H490" stroke="#ffffff" stroke-opacity=".15" stroke-width="2"/>
+<circle cx="176" cy="110" r="5" fill="#ffffff" fill-opacity=".3"/><circle cx="196" cy="110" r="5" fill="#ffffff" fill-opacity=".3"/><circle cx="216" cy="110" r="5" fill="#ffffff" fill-opacity=".3"/>
+<path d="M255 185l-40 35 40 35M385 185l40 35-40 35M345 170l-50 100" stroke="url(#ac)" stroke-width="4"/>
+<g stroke="url(#ac)" stroke-width="4"><circle cx="545" cy="120" r="14" fill="#12102e"/><circle cx="545" cy="290" r="14" fill="#12102e"/><circle cx="595" cy="205" r="14" fill="#12102e"/><path d="M545 134v142M545 205h36"/></g>
+<g stroke="url(#ac)" stroke-width="4"><circle cx="95" cy="150" r="14" fill="#12102e"/><circle cx="95" cy="290" r="14" fill="#12102e"/><path d="M95 164v112"/></g>
+
+</svg>

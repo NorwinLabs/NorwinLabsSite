@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#312e81"/><stop offset="1" stop-color="#12102e"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#6366f1" stop-opacity=".55"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="640" height="400" fill="url(#bg)"/>
+<circle cx="320" cy="200" r="190" fill="url(#gl)"/>
+<g stroke="#ffffff" stroke-opacity=".05"><path d="M0 0V400"/><path d="M40 0V400"/><path d="M80 0V400"/><path d="M120 0V400"/><path d="M160 0V400"/><path d="M200 0V400"/><path d="M240 0V400"/><path d="M280 0V400"/><path d="M320 0V400"/><path d="M360 0V400"/><path d="M400 0V400"/><path d="M440 0V400"/><path d="M480 0V400"/><path d="M520 0V400"/><path d="M560 0V400"/><path d="M600 0V400"/><path d="M640 0V400"/><path d="M0 0H640"/><path d="M0 40H640"/><path d="M0 80H640"/><path d="M0 120H640"/><path d="M0 160H640"/><path d="M0 200H640"/><path d="M0 240H640"/><path d="M0 280H640"/><path d="M0 320H640"/><path d="M0 360H640"/><path d="M0 400H640"/></g>
+
+<rect x="130" y="80" width="300" height="200" rx="16" fill="#1b1942" stroke="url(#ac)" stroke-width="4"/>
+<path d="M280 280v40M220 324h120" stroke="url(#ac)" stroke-width="4"/>
+<path d="M155 190h45l20-45 30 85 25-55h55" stroke="#22d3ee" stroke-width="5"/>
+<g transform="translate(455 205) rotate(-35)"><rect x="-14" y="-80" width="28" height="170" rx="10" fill="#1b1942" stroke="url(#ac)" stroke-width="4"/><path d="M-30 -92a30 30 0 0 1 60 0v24h-18v-24a12 12 0 0 0-24 0v24h-18z" fill="#1b1942" stroke="url(#ac)" stroke-width="4"/></g>
+<circle cx="450" cy="95" r="26" fill="#22d3ee" fill-opacity=".15" stroke="#22d3ee" stroke-width="4"/>
+<path d="M438 95l9 9 17-19" stroke="#22d3ee" stroke-width="5"/>
+
+</svg>

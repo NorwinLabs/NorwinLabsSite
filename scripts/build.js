@@ -26,6 +26,9 @@ const ASSETS = [
 ];
 const REFERENCES = [
   "index.html",
+  "software.html",
+  "consulting.html",
+  "games.html",
   "privacy.html",
   "404.html",
   "sw.js",
