@@ -1,7 +1,7 @@
 {
   "name": "NorwinLabs - Software as a Service",
   "short_name": "NorwinLabs",
-  "description": "NorwinLabs builds focused SaaS products for small businesses.",
+  "description": "NorwinLabs builds simple software for small businesses.",
   "start_url": "/",
   "scope": "/",
   "display": "browser",
