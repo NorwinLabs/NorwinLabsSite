@@ -270,65 +270,52 @@ a:hover {
   text-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
 }
 
-/* Topology graphic */
-.topo {
-  width: 100%;
-  height: auto;
+/* Highlights (hero, right column) */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+.stat b {
   display: block;
+  font-size: 1.7rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #f4f6ff;
 }
-.topo .link {
-  stroke: var(--line-strong);
-  stroke-width: 1.2;
-  fill: none;
+.stat span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
-.topo .flow {
-  stroke: var(--cyan);
-  stroke-width: 1.6;
-  fill: none;
-  stroke-dasharray: 4 14;
-  animation: flow 1.6s linear infinite;
-  opacity: 0.85;
-}
-.topo .flow.g {
-  stroke: var(--green);
-  animation-duration: 2.2s;
-}
-@keyframes flow {
-  to {
-    stroke-dashoffset: -36;
-  }
-}
-.topo .node {
-  fill: var(--panel);
-  stroke: var(--cyan);
-  stroke-width: 1.4;
-}
-.topo .node.core {
-  stroke: var(--green);
-  fill: #0b2018;
-}
-.topo text {
+.panel h3 .when {
+  float: right;
   font-family: var(--mono);
-  font-size: 10px;
-  fill: var(--muted);
-  text-anchor: middle;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--green);
 }
-.topo .pulse {
-  fill: none;
-  stroke: var(--green);
-  stroke-width: 1;
-  transform-origin: 160px 150px;
-  animation: pulse 2.6s ease-out infinite;
+.panel .role {
+  margin: -0.4rem 0 0.7rem;
+  font-size: 0.85rem;
+  color: var(--cyan);
 }
-@keyframes pulse {
-  from {
-    transform: scale(0.6);
-    opacity: 0.9;
-  }
-  to {
-    transform: scale(2.4);
-    opacity: 0;
-  }
+.panel .links {
+  margin-top: 1rem;
+}
+.card-list .when {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: 0.4rem;
 }
 
 /* ===== SECTIONS ===== */

@@ -7,27 +7,27 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' https: data:; connect-src 'self'; worker-src 'self';"
     />
-    <title>Gavin Norwood | IT Administrator &amp; Network Architect</title>
+    <title>Gavin Norwood | Software Developer &amp; IT Systems Administrator</title>
     <meta
       name="description"
-      content="Gavin Norwood — Senior IT Administrator, network architect, Linux admin, hardware technician, Salesforce/Apex and C++ game developer. Free, open source software on GitHub."
+      content="Gavin Norwood — software developer and IT systems administrator. Java/Spring Boot APIs, Salesforce Apex, C++/Unreal Engine 5, and infrastructure for 400 users. Free, open source software on GitHub."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://norwinlabs.com/portfolio.html" />
     <meta name="theme-color" content="#0b1020" />
     <link rel="icon" type="image/png" href="/media/favicon.png" />
 
-    <meta property="og:title" content="Gavin Norwood | IT Administrator &amp; Network Architect" />
+    <meta property="og:title" content="Gavin Norwood | Software Developer &amp; IT Systems Administrator" />
     <meta
       property="og:description"
-      content="Senior IT Administrator. Free and open source software."
+      content="Software developer and systems administrator: Java, Salesforce, C++/Unreal Engine 5. Free and open source software."
     />
     <meta property="og:url" content="https://norwinlabs.com/portfolio.html" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://norwinlabs.com/media/og-portfolio.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Gavin Norwood, IT Administrator and Network Architect" />
+    <meta property="og:image:alt" content="Gavin Norwood, Software Developer and IT Systems Administrator" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://norwinlabs.com/media/og-portfolio.jpg" />
 
@@ -37,7 +37,8 @@
   "@type": "Person",
   "name": "Gavin Norwood",
   "url": "https://norwinlabs.com/portfolio.html",
-  "jobTitle": "IT System Administrator",
+  "jobTitle": "Senior Developer and IT System Administrator",
+  "worksFor": { "@type": "Organization", "name": "Allied Dispatch Solutions" },
   "image": "https://norwinlabs.com/media/gavin.webp",
   "sameAs": [
     "https://github.com/NorwinLabs",
@@ -45,6 +46,7 @@
   ],
   "address": {
     "@type": "PostalAddress",
+    "addressLocality": "Fall Branch",
     "addressRegion": "TN",
     "addressCountry": "US"
   },
@@ -63,22 +65,23 @@
     "name": "AWS Certified Cloud Practitioner"
   },
   "knowsAbout": [
-    "Network architecture",
-    "FortiNet",
-    "Linux administration",
-    "Windows Server",
-    "Active Directory",
-    "Salesforce Apex",
     "Java",
+    "Spring Boot",
+    "Salesforce Apex",
     "C++",
     "Unreal Engine",
-    "AWS",
-    "CI/CD"
+    "REST APIs",
+    "CI/CD",
+    "Kubernetes",
+    "Linux administration",
+    "Active Directory",
+    "FortiNet",
+    "AWS"
   ]
 }
     </script>
 
-    <link rel="stylesheet" href="portfolio.min.css?v=13413c4e" />
+    <link rel="stylesheet" href="portfolio.min.css?v=5fb4dc61" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
   </head>
@@ -108,43 +111,19 @@
           <div class="terminal-body" id="term">
             <noscript>
               <span class="ln"><span class="prompt">$</span> whoami</span>
-              <span class="ln out">Gavin Norwood — Senior IT Administrator, Network Architect</span>
+              <span class="ln out">Gavin Norwood — Software Developer &amp; IT Systems Administrator</span>
             </noscript>
           </div>
         </div>
 
-        <svg
-          class="topo"
-          viewBox="0 0 320 300"
-          role="img"
-          aria-label="Decorative network topology diagram"
-        >
-          <path class="link" d="M160 150 L60 60" />
-          <path class="link" d="M160 150 L260 60" />
-          <path class="link" d="M160 150 L50 230" />
-          <path class="link" d="M160 150 L270 235" />
-          <path class="link" d="M160 150 L160 40" />
-          <path class="link" d="M60 60 L160 40" />
-          <path class="link" d="M260 60 L160 40" />
-          <path class="flow" d="M60 60 L160 150" />
-          <path class="flow g" d="M160 150 L260 60" />
-          <path class="flow" d="M160 150 L50 230" />
-          <path class="flow g" d="M270 235 L160 150" />
-          <path class="flow" d="M160 40 L160 150" />
-          <circle class="pulse" cx="160" cy="150" r="24" />
-          <circle class="node core" cx="160" cy="150" r="22" />
-          <text x="160" y="154" style="fill: #34d399">CORE</text>
-          <circle class="node" cx="60" cy="60" r="15" />
-          <text x="60" y="38">FW</text>
-          <circle class="node" cx="260" cy="60" r="15" />
-          <text x="260" y="38">VPN</text>
-          <circle class="node" cx="160" cy="40" r="13" />
-          <text x="160" y="20">WAN</text>
-          <circle class="node" cx="50" cy="230" r="15" />
-          <text x="50" y="262">SRV</text>
-          <circle class="node" cx="270" cy="235" r="15" />
-          <text x="270" y="267">SIEM</text>
-        </svg>
+        <div class="stats" aria-label="Highlights">
+          <div class="stat"><b>400</b><span>users supported across 4 locations</span></div>
+          <div class="stat"><b>75%</b><span>fewer payment errors after the Salesforce overhaul</span></div>
+          <div class="stat"><b>99%</b><span>network uptime, with downtime cut 50%</span></div>
+          <div class="stat"><b>90%</b><span>faster device provisioning</span></div>
+          <div class="stat"><b>$20K+</b><span>saved through vendor and tooling changes</span></div>
+          <div class="stat"><b>1,600+</b><span>Steam wishlists for Windhelm</span></div>
+        </div>
       </div>
 
       <!-- EXPERIENCE -->
@@ -157,37 +136,40 @@
         <div class="timeline">
           <article class="job">
             <div class="job-head">
-              <h3>IT System Administrator <span>@ TrxNow</span></h3>
+              <h3>Senior Developer &amp; IT System Administrator <span>@ Allied Dispatch Solutions</span></h3>
               <span class="when">June 2025 &ndash; Present</span>
             </div>
             <ul>
-              <li><b>Network Architecture &amp; Infrastructure:</b> Design, implement and optimize enterprise FortiNet network topology and infrastructure, with security, high availability and redundancy across Linux and Windows server environments.</li>
-              <li><b>Payment Systems:</b> Overhauled Salesforce application payment integrations using Apex and SOQL, improving transaction reliability and data security.</li>
-              <li><b>IT Operations &amp; User Support:</b> Full-spectrum support across hardware, software, connectivity and peripherals, plus onboarding/offboarding, equipment provisioning, user accounts and access permissions.</li>
-              <li><b>Fleet &amp; License Management:</b> Oversee procurement, inventory, deployment and maintenance of 300+ workstations and peripherals through MSP platforms (Syncro, Atera), with timely patching and remote support.</li>
-              <li><b>Security &amp; System Administration:</b> Maintain Microsoft 365 and corporate applications while enforcing endpoint protection, identity authentication, system updates and cybersecurity incident response.</li>
-              <li><b>Vendor &amp; Project Coordination:</b> Lead vendor contract negotiations and work with third-party IT providers to optimize licensing, reduce overhead and deliver key technology projects.</li>
+              <li><b>Salesforce payments:</b> Overhauled the payment integration in Apex/SOQL, cutting the error rate 75% and removing transaction failures that crashed the app. Replaced manual payments with automated subscription billing (50,000 API calls/month).</li>
+              <li><b>Automation:</b> Wrote scripts deployed through Syncro that give agent PCs self-healing and automated remediation, resolving 20 tickets a week while on site only 1&ndash;2 days a week.</li>
+              <li><b>Provisioning:</b> Built laptop and hardware reset scripts that ready a device for the next user in 10 minutes (90% faster deployment); completed 50+ onboardings and offboardings.</li>
+              <li><b>Network reliability:</b> Redesigned network equipment with redundancy, reaching 99% uptime, cutting downtime 50% and removing manual switchover. Co-manage 30 network devices across 2 locations.</li>
+              <li><b>Fleet &amp; patching:</b> Manage 300+ workstations for 400 users across 4 locations (plus remote staff) through Syncro and Atera. Patches are vetted weekly and deployed automatically during inactive hours.</li>
+              <li><b>Security:</b> Blocked USB storage and enforced web-level filtering to protect PII, reducing phishing exposure and supporting passing quarterly security audits.</li>
+              <li><b>Cost savings:</b> Saved $20,000+ through vendor negotiations and by replacing third-party software with in-house solutions.</li>
             </ul>
           </article>
           <article class="job">
             <div class="job-head">
-              <h3>Java API Developer <span>@ CGI</span></h3>
+              <h3>Java API Developer <span>@ CGI Inc.</span></h3>
               <span class="when">Jan 2022 &ndash; Apr 2025</span>
             </div>
             <ul>
-              <li><b>API Management:</b> Built and maintained RESTful APIs for a diverse client portfolio using Spring Boot and Java.</li>
-              <li><b>Modernization:</b> Streamlined backend logic for legacy systems, improving data retrieval speed and integration with third-party services.</li>
-              <li><b>Collaborative Dev:</b> Worked in an Agile team using Jira for task tracking and Jenkins for automated deployment.</li>
+              <li><b>APIs:</b> Built and maintained 4 major RESTful APIs (Java, Spring Boot) for 3 large finance-collections clients, on an Agile team of 10 using Jira and Confluence. Validated changes with SonarQube.</li>
+              <li><b>Delivery:</b> Shipped quality updates against weekly sprints, under budget and on schedule.</li>
+              <li><b>Documentation:</b> Wrote full change documents and updated technical specs, keeping changes compatible with existing systems.</li>
+              <li><b>Performance:</b> Delivered new query APIs that improved data retrieval speed 30% for legacy systems and integrated with third-party services, handling 1,000 requests an hour.</li>
+              <li><b>Pipelines:</b> Used Jenkins pipelines for automated builds and deployment to Kubernetes clusters.</li>
             </ul>
           </article>
           <article class="job">
             <div class="job-head">
-              <h3>SAP ABAP Developer <span>@ Building Information</span></h3>
+              <h3>SAP ABAP Developer <span>@ Building Information, LLC</span></h3>
               <span class="when">Fall 2020 &ndash; Spring 2021</span>
             </div>
             <ul>
-              <li><b>ERP Customization:</b> Developed and modified financial and inventory reports in ABAP to meet client business requirements.</li>
-              <li><b>Lifecycle Management:</b> Managed change requests through Jira and kept technical documentation current for every report modification.</li>
+              <li>Developed and modified financial and inventory reports in ABAP, including a large shipping and receiving report for a major construction company.</li>
+              <li>Managed change requests in Jira and maintained technical documentation for every report modification.</li>
             </ul>
           </article>
           <article class="job">
@@ -196,123 +178,109 @@
               <span class="when">Spring 2018</span>
             </div>
             <ul>
-              <li><b>Database Migration:</b> Led the migration of police department servers from Ruby-based data structures to MySQL, improving query performance, adding features and preserving data integrity.</li>
-            </ul>
-          </article>
-          <article class="job">
-            <div class="job-head">
-              <h3>Lead Unreal Engine Developer <span>@ Independent Project</span></h3>
-              <span class="when">2021 &ndash; Present</span>
-            </div>
-            <ul>
-              <li><b>Software Architecture:</b> Designed and programmed a full-scale game in C++ on Unreal Engine 5, owning the lifecycle from concept to Steam publication.</li>
-              <li><b>Performance Optimization:</b> Built procedural generation systems and optimized the rendering pipeline (LOD, culling) to hold high frame rates in complex environments.</li>
-              <li><b>Live Ops:</b> Run quarterly update cycles, using version control and community feedback to refactor code and ship new features.</li>
+              <li>Led the migration of police department servers from Ruby-based data structures to MySQL, improving query performance, adding features and preserving data integrity.</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <!-- EDUCATION & HOME LAB -->
-      <section id="background" aria-labelledby="background-h">
+      <!-- PROJECTS -->
+      <section id="projects" aria-labelledby="projects-h">
         <div class="sec-head">
-          <h2 id="background-h">Education &amp; home lab</h2>
-          <span class="sub">Credentials and what I build at home</span>
+          <h2 id="projects-h">Projects</h2>
+          <span class="sub">What I build on my own time</span>
         </div>
         <div class="two-col">
           <div class="panel">
-            <h3>Education &amp; certifications</h3>
+            <h3>Windhelm <span class="when">2021 &ndash; Present</span></h3>
+            <p class="role">Lead Unreal Engine Developer</p>
             <ul class="card-list">
-              <li><b>BS, Computer Science</b> &mdash; East Tennessee State University (GPA 3.50)</li>
-              <li><b>AAS, Computer Programming</b> &mdash; Northeast State Community College (GPA 3.80)</li>
-              <li><b>AWS Certified Cloud Practitioner</b> (2023)</li>
+              <li>Designed and programmed a full-scale game in C++ on Unreal Engine 5, owning the full life-cycle from concept to Steam release (1,600+ wishlists).</li>
+              <li>Built procedural generation systems and optimized rendering (LOD, culling); each major update has delivered 25% performance gains.</li>
+              <li>Ship major updates every quarter, using version control and community feedback to refactor code and release new features.</li>
             </ul>
+            <div class="links"><a class="btn" href="/games.html">&gt; Windhelm</a></div>
           </div>
           <div class="panel">
-            <h3>Home lab</h3>
+            <h3>NorwinLabs open source <span class="when">Ongoing</span></h3>
+            <p class="role">github.com/NorwinLabs</p>
             <ul class="card-list">
-              <li><b>Self-hosted infrastructure:</b> Ubuntu and Apache2 web server hosting personal full-stack MEAN apps, tuned for performance and access control.</li>
-              <li><b>CI/CD:</b> end-to-end Jenkins pipelines for build testing, validation and deployment of personal projects.</li>
-              <li><b>Data redundancy:</b> high-capacity NAS on a RAID 5 array for fault tolerance and secure storage.</li>
-              <li><b>Open source:</b> free software on GitHub, including accessibility tools, with issue tracking, PR reviews and release pipelines.</li>
+              <li>Maintain 10 public repositories, including NorwinMouseAssist, NorwinVibe (a floating media player for Windows and Android) and NorwinLabsTools (a Kotlin Android app).</li>
             </ul>
+            <div class="links">
+              <a class="btn" href="/software.html#opensource">&gt; Browse projects</a>
+              <a class="btn" href="https://github.com/NorwinLabs" target="_blank" rel="noopener">&gt; GitHub</a>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- OPEN SOURCE -->
-      <section id="projects" aria-labelledby="projects-h">
-        <div class="sec-head">
-          <h2 id="projects-h">Open source</h2>
-          <span class="sub">Free software published on GitHub</span>
-        </div>
-        <div class="teaser">
-          <p>
-            Everything I build and release for free lives on the Open Source
-            page, kept in sync with GitHub automatically.
-          </p>
-          <div class="links">
-            <a class="btn" href="/software.html#opensource">&gt; Browse projects</a>
-            <a
-              class="btn"
-              href="https://github.com/NorwinLabs"
-              target="_blank"
-              rel="noopener"
-              >&gt; GitHub</a
-            >
-          </div>
+        <div class="panel" style="margin-top: 1.1rem">
+          <h3>Home lab <span class="when">Ongoing</span></h3>
+          <p class="role">Self-hosted infrastructure</p>
+          <ul class="card-list">
+            <li>Run a 6 TB RAID 5 NAS with a self-hosted Gitea server (unlimited storage) for Windhelm source control, plus an Ubuntu/Apache2 server hosting personal MEAN-stack applications.</li>
+            <li>Built custom Jenkins CI/CD pipelines for personal projects; one pipeline saves 30 minutes per deployment.</li>
+            <li>Used FreeRTOS to control many types and brands of microcontrollers in a couple of personal applications.</li>
+          </ul>
         </div>
       </section>
 
       <!-- SKILLS -->
       <section id="skills" aria-labelledby="skills-h">
         <div class="sec-head">
-          <h2 id="skills-h">Tech stack</h2>
+          <h2 id="skills-h">Technical skills</h2>
           <span class="sub">What I work with day to day</span>
         </div>
         <div class="skills">
           <div class="skill">
-            <h3>Network &amp; infrastructure</h3>
+            <h3>Languages</h3>
             <div class="chips">
-              <span>FortiNet</span><span>Network Design</span><span>High Availability</span><span>Windows Server</span><span>Linux Server</span><span>Ubuntu</span><span>Apache2</span><span>Active Directory</span>
+              <span>Java</span><span>C++</span><span>C#</span><span>C</span><span>Python</span><span>Kotlin</span><span>JavaScript</span><span>SQL</span><span>Apex / SOQL</span><span>SAP ABAP</span><span>PHP</span><span>PowerShell</span><span>Bash</span>
             </div>
           </div>
           <div class="skill">
-            <h3>Security &amp; endpoint</h3>
+            <h3>Frameworks</h3>
             <div class="chips">
-              <span>Microsoft 365</span><span>Endpoint Protection</span><span>Identity &amp; Access</span><span>Patch Management</span><span>Incident Response</span><span>Syncro</span><span>Atera</span>
+              <span>Spring Boot</span><span>Node.js / Express</span><span>React</span><span>Angular</span><span>MERN / MEAN</span><span>Salesforce</span><span>MuleSoft</span><span>Heroku</span>
             </div>
           </div>
           <div class="skill">
-            <h3>Salesforce</h3>
+            <h3>Databases</h3>
             <div class="chips">
-              <span>Apex</span><span>SOQL</span><span>MuleSoft</span><span>Heroku</span><span>DevOps Center</span><span>Payment Integrations</span>
+              <span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span><span>Oracle</span><span>MongoDB</span><span>Salesforce SOQL</span>
             </div>
           </div>
           <div class="skill">
             <h3>Cloud &amp; DevOps</h3>
             <div class="chips">
-              <span>AWS (S3, CloudFront)</span><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Gradle / Maven</span><span>Git</span><span>CI/CD</span>
+              <span>S3</span><span>CloudFront</span><span>GitHub Actions</span><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Gradle / Maven</span><span>Git</span><span>Gitea</span>
             </div>
           </div>
           <div class="skill">
-            <h3>Languages</h3>
+            <h3>Infrastructure &amp; admin</h3>
             <div class="chips">
-              <span>Apex</span><span>C</span><span>C++</span><span>C#</span><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript (MERN/MEAN)</span><span>Bash</span><span>PHP</span><span>SAP ABAP</span>
+              <span>Linux Desktop/Server Imaging</span><span>Active Directory</span><span>FortiNet</span><span>Apache2</span><span>Syncro</span><span>Atera</span>
             </div>
           </div>
           <div class="skill">
-            <h3>Game development</h3>
+            <h3>Tools</h3>
             <div class="chips">
-              <span>C++</span><span>Unreal Engine 5</span><span>Procedural Generation</span><span>LOD &amp; Culling</span><span>Steam Publishing</span>
+              <span>Atlassian</span><span>Jira</span><span>Confluence</span><span>JetBrains IDEs</span><span>Cursor</span><span>Claude</span><span>SonarQube</span><span>VS Code</span>
             </div>
           </div>
-          <div class="skill">
-            <h3>Hardware</h3>
-            <div class="chips">
-              <span>Hardware Repair</span><span>Builds &amp; Upgrades</span><span>Diagnostics</span><span>Cabling &amp; Rack Work</span>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" aria-labelledby="education-h">
+        <div class="sec-head">
+          <h2 id="education-h">Education &amp; certifications</h2>
+        </div>
+        <div class="panel">
+          <ul class="card-list">
+            <li><b>B.S. Computer Science</b> &mdash; East Tennessee State University <span class="when">Graduated 2021</span></li>
+            <li><b>A.A.S. Computer Programming</b> &mdash; Northeast State Community College <span class="when">Graduated 2019</span></li>
+            <li><b>AWS Certified Cloud Practitioner</b> <span class="when">Since 2023</span></li>
+          </ul>
         </div>
       </section>
 
@@ -349,6 +317,6 @@
       </div>
     </footer>
 
-    <script src="portfolio.min.js?v=fc783588" defer></script>
+    <script src="portfolio.min.js?v=1a278112" defer></script>
   </body>
 </html>

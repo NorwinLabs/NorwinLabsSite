@@ -12,8 +12,8 @@
   var SCRIPT = [
     { cmd: "whoami", out: "" },
     { cmd: null, html: "h1" },
-    { cmd: "cat role.txt", out: "IT Administrator · Network Architect · Linux · Salesforce / Apex · C++ Game Dev" },
-    { cmd: "ls ~/open-source | wc -l", out: "free & open source projects, published on GitHub" },
+    { cmd: "cat role.txt", out: "Software Developer · Java / Spring Boot · Salesforce / Apex · C++ / Unreal · Systems Admin" },
+    { cmd: "ls ~/open-source | wc -l", out: "free & open source projects on GitHub" },
     { cmd: "./status.sh", out: "[ OK ] all systems nominal" },
   ];
 
