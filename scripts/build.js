@@ -25,16 +25,30 @@ const ASSETS = [
   { src: "src/chat.js", out: "chat.min.js", loader: "js" },
   { src: "src/styles.css", out: "styles.min.css", loader: "css" },
 ];
-const REFERENCES = [
-  "index.html",
-  "software.html",
-  "consulting.html",
-  "games.html",
-  "terms.html",
-  "privacy.html",
-  "404.html",
-  "sw.js",
-];
+// Page-specific bundles are discovered:
+//   src/css/<page>.css -> <page>.min.css
+//   src/js/<page>.js   -> <page>.min.js
+for (const [dir, ext, loader] of [
+  ["src/css", ".css", "css"],
+  ["src/js", ".js", "js"],
+]) {
+  const abs = path.join(ROOT, dir);
+  if (!fs.existsSync(abs)) continue;
+  for (const file of fs.readdirSync(abs).sort()) {
+    if (!file.endsWith(ext)) continue;
+    ASSETS.push({
+      src: `${dir}/${file}`,
+      out: file.replace(new RegExp(`\\${ext}$`), `.min${ext}`),
+      loader,
+    });
+  }
+}
+
+// Every top-level page plus the service worker carry ?v= references.
+const REFERENCES = fs
+  .readdirSync(ROOT)
+  .filter((f) => f.endsWith(".html") || f === "sw.js")
+  .sort();
 
 const versions = {};
 
