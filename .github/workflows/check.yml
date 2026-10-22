@@ -1,0 +1,28 @@
+name: Check
+
+# Runs on pull requests and on every branch except main (main is handled by
+# build-assets.yml, which commits rebuilt assets).
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - name: Build assets
+        run: npm run build
+      - name: Built assets are committed and up to date
+        run: git diff --exit-code
+      - name: Validate pages (SEO tags, sitemap, local references)
+        run: npm run validate

@@ -683,3 +683,9 @@ body::after {
   font-family: var(--sans);
   font-weight: 600;
 }
+
+/* Footer links need a non-color cue (WCAG 1.4.1) */
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

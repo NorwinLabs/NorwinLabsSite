@@ -4,7 +4,8 @@
   "description": "Static site for NorwinLabs. Sources live in src/; `npm run build` minifies them into script.min.js and styles.min.css.",
   "scripts": {
     "build": "node scripts/build.js",
-    "start": "npx --yes serve -l 8125 ."
+    "start": "npx --yes serve -l 8125 .",
+    "validate": "node scripts/validate.js"
   },
   "devDependencies": {
     "esbuild": "0.24.2"
