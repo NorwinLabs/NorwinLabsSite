@@ -24,8 +24,8 @@
 
   var SERVICES = [
     { id: "inventory", label: "NorwinInventory (software)", q: "Are you looking for a demo, pricing details, or help getting set up?", opts: ["Try the demo", "Pricing details", "Help getting set up"] },
-    { id: "msp", label: "Managed IT services (MSP)", q: "Roughly how many computers or users would we support?", opts: ["1-10", "11-25", "26-50", "50+"] },
-    { id: "network", label: "Computer networking", q: "Is this a new network, or fixing an existing one?", opts: ["New setup", "Fix an existing network", "Upgrade or expand"] },
+    { id: "msp", label: "Managed IT support", q: "Roughly how many computers or users would we support?", opts: ["1-10", "11-25", "26-50", "50+"] },
+    { id: "network", label: "Office internet and Wi-Fi", q: "Is this a new network, or fixing an existing one?", opts: ["New setup", "Fix an existing network", "Upgrade or expand"] },
     { id: "cabling", label: "Server room and cable cleanup", q: "What are we tidying up?", opts: ["One rack or closet", "Multiple racks", "A whole server room", "Not sure yet"] },
     { id: "website", label: "Website building", q: "What kind of website do you need?", opts: ["New website", "Redesign", "Fixes or updates", "Not sure yet"] },
     { id: "pcbuild", label: "Custom PC building", q: "What will the PC mainly be used for?", opts: ["Gaming", "Creative work", "Office or business", "Development or workstation"] },
@@ -37,6 +37,7 @@
   var FAQ = [
     { q: "Pricing", a: "NorwinInventory is $35 per month with unlimited items, teammates and scanners. Consulting starts at $90 for troubleshooting, $200 plus parts for a custom PC, $300 for networking, $900 for an acquisition tech review and $1,200 for a website. Managed IT is custom monthly plans, and cable cleanup starts with a free walkthrough. Every project gets a clear estimate first." },
     { q: "Where do you work?", a: "Remotely, and on-site in our local area. Ask for on-site availability and we will confirm." },
+    { q: "What does NorwinInventory do?", a: "It keeps track of your stock with a barcode scanner or your phone camera. You can receive and remove stock, ring up sales at a register, count shelves, reorder from suppliers, track expiry dates, print barcode labels and keep contracts in one place. It works on any phone, tablet or computer, and keeps scanning with no signal. There is a free demo you can try on the login page." },
     { q: "Support hours", a: "NorwinInventory customers get 24/7 customer support by email at " + TO_EMAIL + "." },
     { q: "Website support", a: "Every website we build includes lifetime support: free fixes for issues in our work, plus security and compatibility updates. Content changes and new features are quoted separately." },
   ];

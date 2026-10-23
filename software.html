@@ -11,7 +11,7 @@
     <title>Software - NorwinLabs</title>
     <meta
       name="description"
-      content="NorwinInventory: an easy inventory-tracking app that works with barcode scanners. $35 a month with no limits on items, people or scanners, and 24/7 support. Plus free tools anyone can use."
+      content="NorwinInventory: an easy inventory app that works with barcode scanners. Sales register, stocktakes, reordering, expiry dates and labels for $35 a month, with no limits on items or people, and 24/7 support. Plus free tools anyone can use."
     />
     <link rel="canonical" href="https://norwinlabs.com/software.html" />
     <meta property="og:type" content="website" />
@@ -29,7 +29,7 @@
     <link rel="icon" type="image/png" href="/media/favicon.png" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.min.css?v=76cadab9" />
+    <link rel="stylesheet" href="styles.min.css?v=cc8f1434" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -78,7 +78,7 @@
         <div class="container">
           <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Software</span>
           <h1>Software we build, <span class="gradient-text">paid and free.</span></h1>
-          <p class="lead">NorwinInventory is our app for keeping track of your stock by scanning barcodes. We also share free tools that anyone can use.</p>
+          <p class="lead">NorwinInventory is our app for keeping track of your stock by scanning barcodes, ringing up sales, reordering from suppliers and more. We also share free tools that anyone can use.</p>
           <div class="hero-actions">
             <a class="cta-button" href="#pricing">See pricing</a>
             <a class="cta-button secondary" href="#opensource">Free tools</a>
@@ -91,37 +91,67 @@
         <div class="container section-animate">
           <p class="kicker">NorwinInventory</p>
           <h2 class="section-title">Always know what you have in stock</h2>
-          <p class="section-subtitle">Built to work with the barcode scanner you already own, with the safeguards a growing business needs.</p>
+          <p class="section-subtitle">Built around the barcode scanner you already own, and it works on any phone, tablet or computer. You can even install it like an app.</p>
           <div class="grid features">
             <article class="card feature">
               <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v12M8 6v12M12 6v12M16 6v12M20 6v12" /></svg></span>
               <h3>Scan anything</h3>
-              <p>Plug in almost any barcode scanner and it just works, with nothing to install. No scanner? Use your phone or tablet camera. Add stock, remove stock, count what is on the shelf, or look up an item.</p>
+              <p>Plug in almost any barcode scanner and it just works, with nothing to install. No scanner? Your phone or tablet camera reads barcodes too. Add stock, remove stock, count what is on the shelf, or look up an item.</p>
             </article>
             <article class="card feature">
               <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9" /></svg></span>
-              <h3>Trustworthy counts</h3>
-              <p>Every change is written down: who made it, when, and how many. Several people can scan at the same time, and the count can never drop below zero.</p>
+              <h3>A full history</h3>
+              <p>Every change is written down: who made it, when, and what the count was afterwards. Scans from several devices at the same time never get lost.</p>
             </article>
             <article class="card feature">
               <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0" /></svg></span>
-              <h3>Low-stock alerts</h3>
-              <p>Choose how low is too low for each item, and see what needs reordering as soon as you log in.</p>
+              <h3>Never run out by surprise</h3>
+              <p>Choose how low is too low for each item. What is running low or sold out shows up the moment you open the app.</p>
             </article>
             <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0-12l-4 4m4-4l4 4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg></span>
-              <h3>Easy to move in and out</h3>
-              <p>Bring in your existing list from a spreadsheet, and take your data with you any time. Search by name or item number, or filter by category or location.</p>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h20v14H2zM2 10h20" /></svg></span>
+              <h3>Ring up sales</h3>
+              <p>Scan items at the register and the stock comes off by itself. Sales tax is added for you, and you can email a receipt.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2M9 5h6M9 14l2 2 4-4" /></svg></span>
+              <h3>Stocktakes and more than one location</h3>
+              <p>Count a shelf, a room or the whole shop by scanning, review every difference, then update your stock in one click. Keep stock in several places and move it between them.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7zM5.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" /></svg></span>
+              <h3>Reorder without the spreadsheet</h3>
+              <p>See what is running low, turn it into orders for each supplier, email them, and receive the delivery straight into your stock.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2" /></svg></span>
+              <h3>Expiry dates</h3>
+              <p>For food and other short-life items, track each batch and its expiry date. See what is about to expire, soonest first, and write off what has gone bad.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8zM7.5 8.5h.01" /></svg></span>
+              <h3>Print your own barcode labels</h3>
+              <p>Pick your items, choose a label size and print labels for shelves, bins and products. Each one scans with any scanner or phone camera.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h6" /></svg></span>
+              <h3>Contracts and agreements</h3>
+              <p>Keep track of warranties, leases, subscriptions and service agreements: what they cost, what they say and when they end, with email reminders.</p>
+            </article>
+            <article class="card feature">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 20h.01M3 3l18 18" /></svg></span>
+              <h3>Keeps working with no signal</h3>
+              <p>Bad reception in the stockroom? Scans are saved on your device and sent the moment you are back online, and never counted twice.</p>
             </article>
             <article class="card feature">
               <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" /></svg></span>
-              <h3>Built for teams</h3>
-              <p>Invite your team by email. Admins handle billing and who has access; everyone else can scan and update stock. Everyone sees the same up-to-date list.</p>
+              <h3>Your whole team, one price</h3>
+              <p>Invite as many people as you like. Members scan and update stock; Store Owners also handle billing and deletions. You can even add your own name, logo and colours.</p>
             </article>
             <article class="card feature">
-              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /></svg></span>
-              <h3>Simple billing</h3>
-              <p>One flat monthly price. Payments are handled securely by Stripe, and you can update your card or cancel any time from your account.</p>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0-12l-4 4m4-4l4 4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg></span>
+              <h3>Bring your spreadsheet</h3>
+              <p>Import your existing list in a minute, and take your data with you any time. Search by name or item number, or filter by category or location.</p>
             </article>
           </div>
           <article class="card feature wide support-band">
@@ -140,19 +170,23 @@
         <div class="container section-animate">
           <p class="kicker">Inside the app</p>
           <h2 class="section-title">See it before you sign up</h2>
-          <p class="section-subtitle">Real screens from NorwinInventory, shown with a sample business. Want to click around? Open the login page and use the shared demo account.</p>
+          <p class="section-subtitle">Real screens from NorwinInventory, shown with a sample business. Want to click around? Try the demo, a shared sample business you can explore without entering anything of your own.</p>
           <div class="shots">
             <figure class="shot">
               <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Inventory</span></div><img class="mock-shot" src="/media/app-inventory.webp" alt="The Inventory page listing items with category, location, on-hand quantity, stock status badges and value" width="1280" height="820" loading="lazy" /></div>
-              <figcaption><h3>Every item at a glance</h3><p>Search or scan to find anything. Labels show what is running low or sold out, and you can search, filter, and move your list in and out of a spreadsheet.</p></figcaption>
+              <figcaption><h3>Every item at a glance</h3><p>Search or scan to find anything. Labels show what is running low or sold out, and you can filter by category or stock level.</p></figcaption>
             </figure>
             <figure class="shot">
               <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Reports</span></div><img class="mock-shot" src="/media/app-reports.webp" alt="The Reports page showing inventory value, units on hand, a stock in and out chart and best sellers" width="1280" height="820" loading="lazy" /></div>
               <figcaption><h3>Know how stock is moving</h3><p>How much your stock is worth, what to reorder, how much came in and went out over time, plus your best sellers.</p></figcaption>
             </figure>
             <figure class="shot">
-              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Log in</span></div><img class="mock-shot" src="/media/app-login.webp" alt="The Norwin Inventory login page with a Try the demo option" width="1280" height="780" loading="lazy" /></div>
-              <figcaption><h3>Try the demo</h3><p>No account needed. The login page has a sample business filled with example products and history, so you can explore without entering anything of your own.</p></figcaption>
+              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Purchasing</span></div><img class="mock-shot" src="/media/app-purchasing.webp" alt="The Purchasing page listing low-stock items with suggested order quantities and suppliers" width="1280" height="820" loading="lazy" /></div>
+              <figcaption><h3>Reorder in a few clicks</h3><p>Low items are listed with a suggested amount and supplier. Tick what you want and create the orders.</p></figcaption>
+            </figure>
+            <figure class="shot">
+              <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Expiring stock</span></div><img class="mock-shot" src="/media/app-expiry.webp" alt="The Expiring stock page listing batches soonest first with expiry badges" width="1280" height="820" loading="lazy" /></div>
+              <figcaption><h3>Catch expiry dates in time</h3><p>See which batches are about to expire, soonest first, and write off what has already gone.</p></figcaption>
             </figure>
           </div>
           <p class="shots-cta"><a class="cta-button" href="https://inventory.norwinlabs.com/login">Try the demo</a></p>
@@ -165,9 +199,9 @@
           <p class="kicker">How it works</p>
           <h2 class="section-title">Up and scanning in three steps</h2>
           <ol class="steps">
-            <li><span class="step-num">1</span><h3>Add your items</h3><p>Upload your list from a spreadsheet, or add items one at a time with a name, barcode, shelf location and a low-stock warning level.</p></li>
-            <li><span class="step-num">2</span><h3>Invite your team</h3><p>Send email invites and choose what each person can do.</p></li>
-            <li><span class="step-num">3</span><h3>Start scanning</h3><p>Plug in a scanner or open your camera, and your counts update with every scan.</p></li>
+            <li><span class="step-num">1</span><h3>Add your items</h3><p>Upload your list from a spreadsheet, or add items one at a time. You can even scan a product's barcode straight into the form.</p></li>
+            <li><span class="step-num">2</span><h3>Invite your team</h3><p>Send email invites. Add as many people as you like.</p></li>
+            <li><span class="step-num">3</span><h3>Start scanning</h3><p>Receive deliveries, ship orders and count shelves with a scanner or your camera. Everyone sees the same numbers, instantly.</p></li>
           </ol>
         </div>
       </section>
@@ -182,12 +216,12 @@
             <h3>NorwinInventory</h3>
             <div class="price">$35<small> / month</small></div>
             <ul class="checklist">
-              <li>Unlimited items</li>
-              <li>Unlimited teammates</li>
-              <li>Unlimited scanners</li>
+              <li>Unlimited items and locations</li>
+              <li>Unlimited teammates and scanners</li>
+              <li>USB, Bluetooth and camera scanning</li>
+              <li>Sales register, stocktakes, purchasing, expiry tracking and labels</li>
+              <li>Full history of every change, and spreadsheet import and export</li>
               <li>24/7 customer support</li>
-              <li>Full history of every change, and spreadsheet export</li>
-              <li>Update or cancel any time from your account</li>
             </ul>
             <a class="cta-button block" href="https://inventory.norwinlabs.com/login">Get started</a>
             <p class="fine-print">Cancel anytime. See our <a href="/terms.html">Terms</a>.</p>
@@ -287,6 +321,6 @@
     </footer>
 
     <script src="script.min.js?v=f01f84af" defer></script>
-    <script src="chat.min.js?v=95c82f23" defer></script>
+    <script src="chat.min.js?v=55407bec" defer></script>
   </body>
 </html>
