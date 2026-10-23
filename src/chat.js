@@ -35,7 +35,7 @@
   ];
 
   var FAQ = [
-    { q: "Pricing", a: "NorwinInventory is $75 per month with unlimited items, teammates and scanners. Consulting starts at $90 for troubleshooting, $200 plus parts for a custom PC, $300 for networking, $900 for an acquisition tech review and $1,200 for a website. Managed IT is custom monthly plans, and cable cleanup starts with a free walkthrough. Every project gets a clear estimate first." },
+    { q: "Pricing", a: "NorwinInventory is $35 per month with unlimited items, teammates and scanners. Consulting starts at $90 for troubleshooting, $200 plus parts for a custom PC, $300 for networking, $900 for an acquisition tech review and $1,200 for a website. Managed IT is custom monthly plans, and cable cleanup starts with a free walkthrough. Every project gets a clear estimate first." },
     { q: "Where do you work?", a: "Remotely, and on-site in our local area. Ask for on-site availability and we will confirm." },
     { q: "Support hours", a: "NorwinInventory customers get 24/7 customer support by email at " + TO_EMAIL + "." },
     { q: "Website support", a: "Every website we build includes lifetime support: free fixes for issues in our work, plus security and compatibility updates. Content changes and new features are quoted separately." },
