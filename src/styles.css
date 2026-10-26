@@ -401,6 +401,34 @@ section.alt {
   text-align: center;
 }
 
+/* Photos of finished work, inside a service card */
+.work-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.work-photos figure {
+  flex: 1 1 200px;
+  max-width: 260px;
+}
+.work-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.work-photos figcaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Cards */
 .grid {
   display: grid;
