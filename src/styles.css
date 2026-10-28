@@ -2206,3 +2206,14 @@ section#meet .meet {
     grid-template-columns: 1fr;
   }
 }
+
+.demo-video {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 32px auto 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: #000;
+}
