@@ -6,11 +6,7 @@ const CACHE_NAME = "norwinlabs-v2";
 
 const PRECACHE_ASSETS = [
   "/",
-<<<<<<< HEAD
   "/styles.min.css?v=22a2837f",
-=======
-  "/styles.min.css?v=22a2837f",
->>>>>>> 42000c3 (Make the Software & services carousel more appealing)
   "/script.min.js?v=f01f84af",
   "/media/logo-96.webp",
   "/media/fonts/inter-latin-400-normal.woff2",
