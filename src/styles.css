@@ -932,6 +932,31 @@ section.tight-top {
 .slide-media.shot img {
   object-position: top left;
 }
+.slide-media.photo img {
+  object-position: center 40%;
+}
+.slide-card:hover .slide-media img {
+  transform: scale(1.04);
+}
+.slide-media img {
+  transition: transform 0.4s ease;
+}
+.slide-link::after {
+  content: "";
+}
+.slide-body .slide-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+.slide-card:hover .slide-link {
+  background: rgba(34, 211, 238, 0.22);
+  text-decoration: none;
+}
 .slide-body {
   display: flex;
   flex-direction: column;
