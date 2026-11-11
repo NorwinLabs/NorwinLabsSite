@@ -2242,3 +2242,10 @@ section#meet .meet {
   border-radius: var(--radius);
   background: #000;
 }
+
+/* Looping feature clips */
+.shot.clip video.mock-shot {
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  background: #f4f5f7;
+}

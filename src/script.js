@@ -297,3 +297,23 @@ if (consultForm) {
     });
   }
 }
+
+// Feature clips: play only while on screen (and not at all for people who prefer reduced motion).
+{
+  const clips = document.querySelectorAll("video.mock-shot");
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (clips.length && "IntersectionObserver" in window) {
+    if (still) clips.forEach((v) => v.setAttribute("controls", ""));
+    else {
+      const io = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.play().catch(() => {});
+            else e.target.pause();
+          }),
+        { threshold: 0.4 },
+      );
+      clips.forEach((v) => io.observe(v));
+    }
+  } else clips.forEach((v) => v.setAttribute("controls", ""));
+}
